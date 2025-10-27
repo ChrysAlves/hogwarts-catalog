@@ -1,4 +1,4 @@
-# Hogwarts Catalog (Catálogo de Hogwarts)
+<img width="1842" height="907" alt="image" src="https://github.com/user-attachments/assets/99a49722-22e1-4ccf-a9c6-276b8aa93db5" /># Hogwarts Catalog (Catálogo de Hogwarts)
 
 ![Status](https://img.shields.io/badge/status-conclu%C3%ADdo-green)
 
@@ -8,13 +8,18 @@ A interface inclui um menu de navegação dinâmico, páginas de catálogo com c
 
 ## 📷 Screenshots
 
-*(Adicione seus screenshots aqui para demonstrar o visual da aplicação. Ex:)*
-
-| Página Home | Página de Alunos |
-| :---: | :---: |
+| Página Home | 
+| Página de Alunos |
+| Página de Feitiços |
+| Página dos Funcionários de Hogwarts |
 | <img width="1892" height="932" alt="{503C9FE1-9D06-49AD-AED5-B796A60707E8}" src="https://github.com/user-attachments/assets/1c1eee9a-ab71-446b-9201-cb7fa25d8a04" />
- |<img width="1858" height="924" alt="{6310B2F4-E86E-43FA-BB45-BACC1F557C7D}" src="https://github.com/user-attachments/assets/7aefdc66-d0c9-4142-b628-a8b72116c172" />
- |
+|<img width="1858" height="924" alt="{6310B2F4-E86E-43FA-BB45-BACC1F557C7D}" src="https://github.com/user-attachments/assets/7aefdc66-d0c9-4142-b628-a8b72116c172" />
+|<img width="1826" height="914" alt="{C0368F5A-0C08-4F93-AEE9-57129BC280C4}" src="https://github.com/user-attachments/assets/59bc9a63-5e3a-4a9d-b0b8-9355a32198d7" />
+|<img width="1840" height="917" alt="{C8AFE7A8-B400-4097-8ED5-130AC74124EB}" src="https://github.com/user-attachments/assets/e2bd8a30-bd9c-413a-b019-c4aae9af2cc8" />
+
+ 
+ 
+ 
 
 ## 🛠️ Tecnologias Utilizadas
 
