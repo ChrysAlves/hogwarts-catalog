@@ -67,19 +67,12 @@ export const Card = ({
   return (
     <div className={cardClasses} onClick={onClick}>
       
-      {/* 1. BARRA DE COR SUPERIOR (MAIS ALTA: 80px) */}
       <div className={`h-20 w-full ${colorLineClass}`}></div>
       
-      {/* 2. AVATAR */}
-      {/* - Centralizado com 'mx-auto'
-        - Puxado 50px para cima com '-mt-[50px]' (metade da sua altura de 100px)
-        - 'z-10' para garantir que fique por cima da barra de cor
-      */}
       <div className="w-[100px] h-[100px] rounded-full overflow-hidden 
                       border-4 border-hp-light-paper bg-hp-light-gray 
                       -mt-[50px] mx-auto relative z-10">
         
-        {/* 3. IMAGEM COM FOCO NO ROSTO */}
         <img 
           src={imageSrc} 
           alt={name} 
@@ -88,10 +81,8 @@ export const Card = ({
         />
       </div>
       
-      {/* 4. NOME (COM MARGEM SUPERIOR PEQUENA) */}
       <h3 className="text-center text-2xl font-bold mt-4 mx-2 text-hp-dark-blue">{name}</h3>
       
-      {/* 5. DADOS (COM PADDING SUPERIOR PEQUENO) */}
       {type === 'character' && data && (
         <div className="px-6 pb-6 pt-2 text-left"> 
           {data.map((item) => (

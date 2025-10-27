@@ -31,7 +31,6 @@ export const Staff = () => {
     return <div className={messageClasses}>Carregando funcionários...</div>;
   }
 
-  // TRADUÇÃO
   if (error) {
     return <div className={messageClasses}>Falha ao buscar funcionários. Tente novamente mais tarde.</div>;
   }
@@ -49,7 +48,6 @@ export const Staff = () => {
             imageUrl={member.image}
             house={member.house}
             data={[
-              // TRADUÇÃO + MAIS CAMPOS
               { label: 'Espécie', value: member.species },
               { label: 'Gênero', value: member.gender },
               { label: 'Casa', value: member.house },

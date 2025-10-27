@@ -2,13 +2,12 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Card } from '../components/Card';
 
-// CORRIGIDO AQUI
 import gryffindorImg from '../assets/images/gryffindor-crest.png';
 import slytherinImg from '../assets/images/slytherin-crest.png';
 import ravenclawImg from '../assets/images/ravenclaw-crest.jpg';
 import hufflepuffImg from '../assets/images/hufflepuff-crest.jpg';
 
-export const Houses = (/* ... (resto do componente em inglês) */) => {
+export const Houses = () => {
   const navigate = useNavigate();
 
   const handleHouseClick = (houseName: string) => {
