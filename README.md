@@ -1,46 +1,126 @@
-# Getting Started with Create React App
+# Hogwarts Catalog (Catálogo de Hogwarts)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Status](https://img.shields.io/badge/status-conclu%C3%ADdo-green)
 
-## Available Scripts
+Este projeto é a solução para um desafio técnico de frontend que exige o desenvolvimento de um catálogo interativo baseado no universo de Harry Potter. A aplicação consome dados de uma API pública para exibir informações sobre estudantes, funcionários e feitiços.
 
-In the project directory, you can run:
+A interface inclui um menu de navegação dinâmico, páginas de catálogo com cards detalhados e funcionalidade de filtro. O projeto foi desenvolvido com React, TypeScript e Docker.
 
-### `npm start`
+## 📷 Screenshots
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+| Página Home |<img width="1892" height="932" alt="{503C9FE1-9D06-49AD-AED5-B796A60707E8}" src="https://github.com/user-attachments/assets/1c1eee9a-ab71-446b-9201-cb7fa25d8a04" />
+| Página de Alunos |<img width="1858" height="924" alt="{6310B2F4-E86E-43FA-BB45-BACC1F557C7D}" src="https://github.com/user-attachments/assets/7aefdc66-d0c9-4142-b628-a8b72116c172" />
+| Página de Feitiços |<img width="1826" height="914" alt="{C0368F5A-0C08-4F93-AEE9-57129BC280C4}" src="https://github.com/user-attachments/assets/59bc9a63-5e3a-4a9d-b0b8-9355a32198d7" />
+| Página dos Funcionários de Hogwarts |<img width="1840" height="917" alt="{C8AFE7A8-B400-4097-8ED5-130AC74124EB}" src="https://github.com/user-attachments/assets/e2bd8a30-bd9c-413a-b019-c4aae9af2cc8" />
 
-### `npm test`
+ 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tecnologias Utilizadas
 
-### `npm run build`
+* **[React](https://reactjs.org/)**
+* **[TypeScript](https://www.typescriptlang.org/)**
+* **[Tailwind CSS](https://tailwindcss.com/)** (Para estilização utilitária)
+* **[React Router DOM](https://reactrouter.com/)** (Para gerenciamento de rotas)
+* **[Axios](https://axios-http.com/)** (Para realizar as chamadas à API)
+* **[Docker](https://www.docker.com/)** & **[Docker Compose](https://docs.docker.com/compose/)**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## ✨ Funcionalidades Principais
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* **Navbar Dinâmica:** Menu de navegação que destaca a página ativa. Possui um layout flutuante e semitransparente na página Home, e sólido nas demais páginas, conforme o design de referência.
+* **Catálogo de Personagens:** Exibição dos Alunos e Funcionários de Hogwarts em cards.
+* **Design dos Cards:**
+    * Cards de personagens com uma barra de cor superior baseada na casa do personagem (Grifinória, Sonserina, etc.).
+    * Cards de feitiços com uma cor roxa padrão.
+    * Efeito de `hover` que expande o card sutilmente.
+* **Filtro por Casas:** A página "Casas" é clicável e redireciona para a página de alunos, filtrando apenas os estudantes daquela casa.
+* **Tratamento de Dados:** Dados nulos ou vazios vindos da API são exibidos como "-".
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+## 🚀 Como Executar o Projeto
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Existem duas maneiras de executar este projeto:
+1.  **Com Docker** (Recomendado, conforme o desafio)
+2.  **Localmente** (Para desenvolvimento)
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+---
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+### 1. Executando com Docker (Recomendado)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Este método constrói e executa a aplicação dentro de um contêiner isolado, garantindo que ela funcione da mesma forma em qualquer ambiente.
 
-## Learn More
+**Pré-requisitos:**
+* [Git](https://git-scm.com)
+* [Docker Desktop](https://www.docker.com/products/docker-desktop/) (deve estar em execução)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+**Passo 1: Clonar o Repositório**
+Abra seu terminal, navegue até a pasta onde deseja salvar o projeto e execute o comando:
+```bash
+git clone [https://github.com/seu-usuario/hogwarts-catalog.git](https://github.com/seu-usuario/hogwarts-catalog.git
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Passo 2: Entrar na Pasta do Projeto
+
+Bash
+
+cd hogwarts-catalog
+Passo 3: Criar o Arquivo de Variáveis de Ambiente Este passo é crucial para que a aplicação saiba onde encontrar a API.
+
+Crie um arquivo chamado .env na raiz do projeto.
+
+Copie e cole o seguinte conteúdo dentro dele:
+
+REACT_APP_API_URL=[https://hp-api.onrender.com/api](https://hp-api.onrender.com/api)
+Passo 4: Construir e Iniciar os Contêineres No seu terminal, na raiz do projeto, execute:
+
+Bash
+
+docker-compose up --build
+O Docker irá baixar a imagem do Node, instalar as dependências e iniciar o servidor.
+
+A opção --build força a reconstrução da imagem, o que é útil se você fizer alterações.
+
+Passo 5: Acessar a Aplicação Abra seu navegador e acesse: http://localhost:3000
+
+2. Executando Localmente (Sem Docker)
+Este método roda o projeto diretamente na sua máquina, usando seu Node.js local.
+
+Pré-requisitos:
+
+Git
+
+Node.js (v18 ou superior recomendado)
+
+Passo 1: Clonar o Repositório
+
+Bash
+
+git clone [https://github.com/seu-usuario/hogwarts-catalog.git](https://github.com/seu-usuario/hogwarts-catalog.git)
+(Substitua pela URL do seu repositório)
+
+Passo 2: Entrar na Pasta do Projeto
+
+Bash
+
+cd hogwarts-catalog
+Passo 3: Criar o Arquivo .env
+
+Crie o arquivo .env na raiz do projeto.
+
+Copie e cole o conteúdo abaixo:
+
+REACT_APP_API_URL=[https://hp-api.onrender.com/api](https://hp-api.onrender.com/api)
+Passo 4: Instalar as Dependências No terminal, execute:
+
+Bash
+
+npm install
+Passo 5: Iniciar o Servidor de Desenvolvimento
+
+Bash
+
+npm start
+Passo 6: Acessar a Aplicação O seu navegador deve abrir automaticamente na página http://localhost:3000.
+
+👤 Autor
+Chrystian Alves
